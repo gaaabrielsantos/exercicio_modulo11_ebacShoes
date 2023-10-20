@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Nabla';
+    color: black;
+}
+
+header>h1,
+a {
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+
+}
+
+header li {
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+}
+
+section {
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.encontra-tenis h1 {
+    padding-top: 16px;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, rgb(147, 255, 255), rgb(241, 127, 241));
+    overflow-x: hidden;
+}
+
+#sobre-loja img {
+    max-width: 250px;
+    margin-right: 40px;
+}
+
+#sobre-loja {
+    color: black;
+}
+
+.container-flex {
+    display: flex;
+}
+
+section h1 {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.alinha-sobre p {
+    text-align: justify;
+    color: black;
+    font-weight: bold;
+}
+
+.encontra-tenis {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 27.8px;
+    font-weight: bold;
+    color: black;
+}
+
+section>div h2 {
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #fff;
+}
+
+.container-produtos ul {
+    display: flex;
+    list-style-type: none;
+    text-align: left;
+
+}
+
+.img-produto {
+    width: 100%;
+}
+
+.espacamento {
+    padding: 0.5em;
+}
+
+.produto h5 {
+    margin-top: 5px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.produto p {
+    margin-top: 5px;
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+}
+
+.price strong {
+    color: black;
+}
+
+.price {
+    margin-top: 10px;
+}
+
+button {
+    display: block;
+    width: 90%;
+    background-color: black;
+    color: #fff;
+    padding: 10px 0;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.rodape {
+    background-color: #fff;
+    color: black;
+    display: block;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+    header>div>h1 {
+        font-size: 40px;
+    }
+
+    header nav a {
+        font-size: 24px;
+    }
+
+    .encontra-tenis h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .container-flex {
+        display: block;
+    }
+
+    #sobre-loja img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .alinha-sobre h2 {
+        font-size: 40px;
+        padding-top: 16px;
+    }
+
+    .alinha-sobre p {
+        font-size: 18px;
+    }
+
+    .container-produtos h2 {
+        font-size: 40px;
+    }
+
+    .espacamento>h5 {
+        font-size: 18px;
+    }
+
+    .espacamento>p,
+    .rodape {
+        font-size: 16px;
+    }
+
+    .container-produtos ul {
+        flex-wrap: wrap;
+    }
+
+    .espacamento {
+        flex-basis: 50%;
+    }
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    header>div>h1 {
+        font-size: 50px;
+    }
+
+    header nav a {
+        font-size: 30px;
+    }
+
+    .encontra-tenis h1 {
+        text-align: center;
+        padding-top: 16px;
+    }
+
+    .container-flex {
+        display: block;
+    }
+
+    #sobre-loja img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .alinha-sobre h2 {
+        font-size: 50px;
+        padding-top: 16px;
+    }
+
+    .alinha-sobre p {
+        font-size: 25px;
+    }
+
+    .container-produtos h2 {
+        font-size: 50px;
+    }
+
+    .espacamento>h5 {
+        font-size: 25px;
+    }
+
+    .espacamento>p,
+    .rodape {
+        font-size: 20px;
+    }
+
+    .container-produtos ul {
+        flex-wrap: wrap;
+    }
+
+    .espacamento {
+        flex-basis: 50%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 640px) {
+    header .container {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    section>div>h1 {
+        font-size: 15px;
+        padding-top: 16px;
+    }
+
+    .container-flex {
+        display: block;
+    }
+
+    #sobre-loja img {
+        max-width: 100%;
+    }
+
+    .container-produtos ul {
+        display: block;
+    }
+
+    .produto h5,
+    .produto p,
+    .price,
+    .alinha-sobre p,
+    .rodape p {
+        font-size: 21px;
+    }
+
+    .alinha-sobre h2 {
+        padding-top: 16px;
+    }
+
+    .encontra-tenis h1 {
+        font-size: 21px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+
+    header>div>h1 {
+        font-size: 32px;
+    }
+
+    header nav a {
+        font-size: 18px;
+    }
+
+    .encontra-tenis h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .container-flex {
+        display: block;
+    }
+
+    #sobre-loja img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .alinha-sobre h2 {
+        font-size: 32px;
+        padding-top: 16px;
+    }
+
+    .alinha-sobre p {
+        font-size: 14px;
+    }
+
+    .container-produtos h2 {
+        font-size: 32px;
+    }
+
+    .espacamento>h5 {
+        font-size: 14px;
+    }
+
+    .espacamento>p,
+    .rodape {
+        font-size: 12px;
+    }
+
+    .container-produtos ul {
+        flex-wrap: wrap;
+    }
+
+    .espacamento {
+        flex-basis: 50%;
+    }
+}
